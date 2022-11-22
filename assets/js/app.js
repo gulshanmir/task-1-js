@@ -1,27 +1,49 @@
-/* Math obyektindən istifadə etmklə dairənin sahəsini hesablayın */
-/* var S=Math.PI*Math.pow(r,2) */
 
 
-/* Date obyektindən istifadə etməklə elə bir funksiya yazın ki istifadə sayta daxil olanda daxil olduğu vaxta əsasən alert mesajı çıxartsın və body backgroundu dəyişsin */
-var date= new Date().getTime;
+var date= new Date().getHours;
 console.log(date);
+
+
 switch(date){
-    case 0:
-    alert ('Night');
-    break;
     case 6:
-        alert ('Morning');
-        case 12:
-            alert ('Afternoon')
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    alert ('Good Morning');
+    break;
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+   alert ('Good Afternoon');
+        break;
+        default:
+            alert ('Good Night')
     
 }
-if (x<6){
+
+
+ 
+ const x =new Date();
+ x.getHours();
+ 
+
+if (x>=6 && x<12) {
+    document.body.style.backgroundColor='green'
+}
+
+else if(x>=12 && x<18){
+    document.body.style.backgroundColor = 'orange'
+}
+else if(x>=18 || x<6){
     document.body.style.backgroundColor = 'black'
 }
 
-if(x>6){
-    document.body.style.backgroundColor = 'white'
-}
-else{
-    document.body.style.backgroundColor ='orange'
-}
+
+var r=4
+var a=Math.PI*Math.pow(4,2);
+console.log(Math.PI*Math.pow(4,2));
